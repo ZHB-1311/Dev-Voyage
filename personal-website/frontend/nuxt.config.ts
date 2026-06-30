@@ -12,5 +12,17 @@ export default defineNuxtConfig({
   srcDir: 'app/',
   nitro: {
     preset: 'netlify_static',
+    prerender: {
+      crawlLinks: true,
+      failOnError: false,
+    },
+  },
+  routeRules: {
+    '/blog/publish': { prerender: false },
+    '/blog/create': { prerender: false },
+    '/blog/edit/**': { prerender: false },
+    '/auth/**': { prerender: false },
+    '/settings/**': { prerender: false },
+    '/user/**': { prerender: false },
   },
 })
