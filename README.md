@@ -1,0 +1,197 @@
+<div align="center">
+
+# 🚀 Dev Voyage
+
+**CIC 计算机信息交流协会 · 开发者成长之旅**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Node.js Version](https://img.shields.io/badge/Node.js-%3E%3D20.6.0-brightgreen)](https://nodejs.org/)
+[![VuePress](https://img.shields.io/badge/VuePress-2.0.0--rc-42b883)](https://vuepress.vuejs.org/)
+[![pnpm](https://img.shields.io/badge/pnpm-package%20manager-f69220)](https://pnpm.io/)
+
+[📖 在线文档](https://ecustcic-codehub.github.io/Dev-Voyage/) · [🐛 问题反馈](https://github.com/ECUSTCIC-CodeHub/Dev-Voyage/issues) · [💡 功能建议](https://github.com/ECUSTCIC-CodeHub/Dev-Voyage/issues/new)
+
+</div>
+
+## 📚 项目简介
+
+**Dev Voyage** 是由华东理工大学计算机信息交流协会 (CIC) 开发维护的技术学习平台。
+
+我们致力于为协会成员和广大计算机爱好者提供：
+
+- 🎯 **系统化的学习路径** —— 从基础到实战，循序渐进
+- 💻 **项目驱动的教学** —— 边做边学，每章都有可见成果
+- 🌟 **真实项目案例** —— 学长学姐的优秀项目展示与分享
+- 🤝 **社区互助氛围** —— 一起学习，共同成长
+
+## 🗂️ 内容导航
+
+### 📘 全栈开发课程
+
+> 从零开始，手把手带你搭建完整的全栈博客系统
+
+| 阶段 | 内容 | 技术栈 |
+|:---:|------|--------|
+| **第一阶段** | 快速起步 · 环境搭建 · 第一个全栈页面 | Nuxt 3 + FastAPI |
+| **第二阶段** | 个人主页 · 文章系统 · 数据库 | Vue 3 + SQLite |
+| **第三阶段** | 用户系统 · 权限管理 · 评论互动 | JWT + Pinia |
+| **第四阶段** | 样式美化 · 性能优化 · 部署上线 | Tailwind CSS + Docker |
+
+### 🔧 基础技能教程
+
+> 计算机开发必备的基础知识
+
+| 教程 | 简介 |
+|------|------|
+| **命令行基础** | 终端使用、常用命令、Shell 基础 |
+| **系统知识** | 操作系统概念、文件系统、进程管理 |
+| **版本控制** | Git 基础、分支管理、协作开发 |
+
+### 🏆 项目案例
+
+> 学长学姐的优秀项目展示，提供灵感与参考
+
+*持续更新中...*
+
+## 🛠️ 技术栈
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+### 📦 核心框架
+
+</td>
+<td align="center" width="50%">
+
+### ✨ 功能增强
+
+</td>
+</tr>
+<tr>
+<td>
+
+- **Vue 3** - 渐进式 JavaScript 框架
+- **VuePress 2** - 静态网站生成器
+- **Theme Plume** - 现代化文档主题
+- **TypeScript** - 类型安全
+
+</td>
+<td>
+
+- **Shiki TwoSlash** - 代码高亮与交互
+- **Chart.js / ECharts** - 数据可视化
+- **Mermaid** - 流程图绘制
+- **Pyodide** - 在线 Python 执行
+
+</td>
+</tr>
+</table>
+
+## 🚀 快速开始
+
+### 环境要求
+
+- **Node.js**: `^20.6.0` 或 `>=22.0.0`
+- **pnpm**: 推荐使用 pnpm 作为包管理器
+
+### 本地运行
+
+```bash
+# 克隆仓库
+git clone https://github.com/ECUSTCIC-CodeHub/FullStack-Voyage.git
+cd FullStack-Voyage
+
+# 安装依赖
+pnpm install
+
+# 启动开发服务器
+pnpm docs:dev
+```
+
+### 常用命令
+
+| 命令 | 说明 |
+|------|------|
+| `pnpm docs:dev` | 启动开发服务器 |
+| `pnpm docs:dev-clean` | 清除缓存后启动 |
+| `pnpm docs:build` | 构建生产版本 |
+| `pnpm docs:preview` | 本地预览构建结果 |
+| `pnpm vp-update` | 更新 VuePress |
+
+## 📁 项目结构
+
+```
+FullStack-Voyage/
+├── docs/
+│   ├── .vuepress/           # VuePress 配置
+│   │   ├── config.ts        # 主配置文件
+│   │   ├── navbar.ts        # 导航栏配置
+│   │   ├── theme/           # 主题定制
+│   │   └── public/          # 静态资源
+│   │
+│   ├── fullstack-course/    # 📘 全栈开发课程
+│   │   ├── 0.md ~ 14.md     # 课程章节
+│   │   └── index.md         # 课程首页
+│   │
+│   ├── essential/           # 🔧 基础技能教程
+│   │   ├── command-line/    # 命令行教程
+│   │   ├── elementary-system/ # 系统知识
+│   │   └── git-usage/       # Git 使用
+│   │
+│   ├── projects/            # 🏆 项目案例
+│   ├── blog/                # 📝 博客文章
+│   └── README.md            # 网站首页
+│
+├── package.json
+└── README.md                # 👈 你在这里
+```
+
+## 🤝 参与贡献
+
+我们欢迎所有形式的贡献！无论是：
+
+- 🐛 **Bug 修复** - 发现问题？帮我们修复它
+- 📝 **内容完善** - 补充教程内容或修正错误
+- 💡 **功能建议** - 有好的想法？告诉我们
+- 🌟 **项目分享** - 分享你的项目案例
+
+### 贡献步骤
+
+1. **Fork** 本仓库
+2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交你的更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 发起 **Pull Request**
+
+### 内容编写规范
+
+- 使用 Markdown 编写，保持格式统一
+- 代码示例需经过测试，确保可运行
+- 使用信息框 (:::tip, :::warning 等) 增强可读性
+- 保持轻松幽默的语言风格
+
+## 📄 开源协议
+
+本项目采用 [MIT 许可证](./LICENSE) 开源。
+
+## 👥 维护团队
+
+<table>
+<tr>
+<td align="center">
+<b>CIC 计算机信息交流协会</b><br/>
+<sub>华东理工大学学生社团</sub>
+</td>
+</tr>
+</table>
+
+**项目维护者**: [@ChenXu233](https://github.com/ChenXu233)
+
+<div align="center">
+
+**🌟 如果这个项目对你有帮助，欢迎点个 Star 支持我们！**
+
+*开发者的成长之旅，从这里启航！*
+
+</div>

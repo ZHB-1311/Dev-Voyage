@@ -1,0 +1,8 @@
+node_modules
+dist
+.vuepress/dist
+*.db
+__pycache__
+*.pyc
+.env
+.DS_Store
