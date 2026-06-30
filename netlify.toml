@@ -1,7 +1,7 @@
 [build]
   base = "personal-website/frontend"
-  command = "pnpm run generate"
-  publish = "dist"
+  command = "npm run build"
+  publish = ".output/public"
 
 [build.environment]
   NODE_VERSION = "20"
