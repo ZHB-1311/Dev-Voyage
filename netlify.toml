@@ -1,10 +1,10 @@
 [build]
-  command = "pnpm run docs:build"
-  publish = "docs/.vuepress/dist"
+  base = "personal-website/frontend"
+  command = "pnpm run generate"
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "20"
-  PNPM_VERSION = "10.17.0"
 
 [[redirects]]
   from = "/*"
