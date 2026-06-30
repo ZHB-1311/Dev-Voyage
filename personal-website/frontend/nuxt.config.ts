@@ -11,9 +11,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'app/',
   nitro: {
-    preset: 'netlify_static',
     prerender: {
-      crawlLinks: true,
       failOnError: false,
     },
   },
